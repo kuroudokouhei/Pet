@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 import {
-  LoginCollection 
+  HomePage 
  } from './ui-components';
 
  import { ThemeProvider } from "@aws-amplify/ui-react";
@@ -25,14 +25,13 @@ Amplify.configure(awsconfig);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <p>abc</p>
+    <HomePage />
 
     <ThemeProvider theme={studioTheme}>
       <App />
     </ThemeProvider>
     
-    <LoginCollection />
+    
   </React.StrictMode>
 );
 

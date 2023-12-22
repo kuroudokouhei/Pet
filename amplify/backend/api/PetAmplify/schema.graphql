@@ -1,5 +1,18 @@
-type Login @model @auth(rules: [{allow: public}]) {
+type Poster @model @auth(rules: [{allow: public}]) {
   id: ID!
-  image: String
-  LoginText: String
-} 
+  name: String
+  date: String
+  location: String
+  animal: String
+  type: String
+  age: String
+  color: String
+  character: String
+  other: String
+}
+
+type CheckPoster @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  main: String
+}
+ 

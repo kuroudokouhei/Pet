@@ -5,8 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { SiteProps } from "./Site";
-import { CollectionProps } from "@aws-amplify/ui-react";
+import { ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -18,17 +17,11 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LoginCollectionOverridesProps = {
-    LoginCollection?: PrimitiveOverrideProps<CollectionProps>;
-    Site?: SiteProps;
+export declare type SignupPasstextOverridesProps = {
+    SignupPasstext?: PrimitiveOverrideProps<ViewProps>;
+    SigU_ID_TBox?: PrimitiveOverrideProps<ViewProps>;
 } & EscapeHatchProps;
-export declare type LoginCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
-    items?: any[];
-    overrideItems?: (collectionItem: {
-        item: any;
-        index: number;
-    }) => SiteProps;
-} & {
-    overrides?: LoginCollectionOverridesProps | undefined | null;
+export declare type SignupPasstextProps = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: SignupPasstextOverridesProps | undefined | null;
 }>;
-export default function LoginCollection(props: LoginCollectionProps): React.ReactElement;
+export default function SignupPasstext(props: SignupPasstextProps): React.ReactElement;

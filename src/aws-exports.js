@@ -29,7 +29,9 @@ const awsmobile = {
     },
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
-    ]
+    ],
+    "aws_user_files_s3_bucket": "petamplify-storage-ca09b658110936-dev",
+    "aws_user_files_s3_bucket_region": "ap-northeast-1"
 };
 
 
